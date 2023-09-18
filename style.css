@@ -573,6 +573,9 @@
         flex-direction: column;
         gap: 20px;
     }
+     .email a {
+        font-size: 0.7rem;
+    }
 
     .footer {
         background: rgb(43, 43, 43);
