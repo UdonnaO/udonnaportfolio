@@ -1,9 +1,8 @@
-
 :root {
     --dark-color: rgb(61, 61, 61);
     --gray-background: rgb(247, 247, 247);
     --off-color: rgb(255, 155, 61);
-} 
+}
 
 
 * {
@@ -13,6 +12,7 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+
 .nav-container {
     display: flex;
     align-items: center;
@@ -23,21 +23,28 @@
     width: 100%;
     box-shadow: 4px 4px 8px rgba(196, 196, 196, 0.2);
 }
+.right-navbar i {
+    display: none;
+}
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 820px;
 }
+
 .left-navbar .logo {
     font-size: 1.3rem;
     color: var(--dark-color);
 }
-.right-navbar ul{
+
+.right-navbar ul {
     display: flex;
     gap: 20px;
     list-style: none;
 }
+
 .right-navbar ul li a {
     text-decoration: none;
     color: var(--dark-color);
@@ -45,9 +52,12 @@
     font-weight: 600;
     transition: 0.3s;
 }
+
 .right-navbar ul li a:hover {
     color: var(--off-color);
 }
+
+/* ------------------ Landing Page ----------------- */
 
 .section1 {
     padding: 70px 200px 0px;
@@ -56,15 +66,18 @@
     display: flex;
     gap: 150px;
 }
+
 .write-up {
     margin: 120px 0px;
 }
+
 .write-up h1 {
     font-size: 70px;
     line-height: 70px;
     color: var(--dark-color);
     font-weight: 600;
 }
+
 .write-up p {
     font-size: 18px;
     line-height: 28px;
@@ -74,32 +87,39 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
 .write-up .btn {
     margin-left: 5px;
     margin-top: 20px;
     display: flex;
     gap: 10px;
 }
+
 .write-up .btn .fa-brands {
     color: var(--dark-color);
     font-size: 30px;
     transition: .3s;
 }
+
 .write-up .btn .fa-linkedin:hover {
     color: #0072b1;
 }
+
 .write-up .btn .fa-github:hover {
     color: #171515;
 }
+
 .section1 img {
     width: 350px;
     height: 350px;
     border-radius: 50%;
     border: 4px solid rgb(165, 165, 165);
 }
+
 .image {
     margin-top: 80px;
 }
+
 /* =========== Tech stack ============= */
 
 .tech-stack-container {
@@ -109,12 +129,14 @@
     position: relative;
     background: gray;
 }
+
 .tech-stack {
     position: absolute;
     display: flex;
     align-items: center;
     gap: 50px;
 }
+
 .tech-stack ul {
     display: flex;
     align-items: center;
@@ -122,6 +144,7 @@
     list-style: none;
     font-size: 30px;
 }
+
 .tech-stack ul li {
     background: rgb(255, 255, 255);
     width: 70px;
@@ -132,15 +155,19 @@
     border-radius: 50%;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
+
 .tech-stack ul li .fa-html5 {
     color: #f06529;
 }
+
 .tech-stack ul li .fa-css3-alt {
     color: #264de4;
 }
+
 .tech-stack ul li .fa-square-js {
     color: #1f1f1f;
 }
+
 .tech-stack ul li .fa-react {
     color: #61dbfb;
 }
@@ -154,6 +181,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .section2 img {
     width: 460px;
     height: 360px;
@@ -164,16 +192,19 @@
     color: var(--off-color);
     margin-bottom: 15px;
 }
+
 .section2 .about-me h2 {
     color: var(--dark-color);
     line-height: 30px;
     margin-bottom: 30px;
 }
+
 .section2 .about-me p {
     color: var(--dark-color);
     font-weight: 300;
     line-height: 23px;
 }
+
 .project-container {
     display: flex;
     align-items: center;
@@ -181,37 +212,45 @@
     background: var(--gray-background);
     height: 330px;
 }
+
 .project-container h1 {
     color: var(--dark-color);
     font-size: 1.7rem;
 }
+
 .contact-container {
     display: flex;
     flex-direction: column;
     padding: 100px 200px;
 }
+
 .contact {
     line-height: 50px;
 }
+
 .contact h3 {
     color: var(--off-color);
     font-size: 1.2rem;
 }
+
 .contact h2 {
     color: var(--dark-color);
     font-weight: 600;
     font-size: 1.8rem;
 }
+
 .contact-btn {
     margin-top: 40px;
     display: flex;
     gap: 80px;
 }
+
 .contact-btn .btn-align {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
 .contact-btn .btn-align .icons {
     display: flex;
     align-items: center;
@@ -221,14 +260,17 @@
     box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
 }
+
 .contact-btn .btn-align .icons i {
     font-size: 30px;
     color: var(--off-color);
 }
+
 .location h3 {
     font-size: 1.1rem;
     color: var(--dark-color);
 }
+
 .location a {
     font-size: 1.3rem;
     color: var(--dark-color);
@@ -236,13 +278,16 @@
     transition: 0.3s;
     font-weight: 400;
 }
+
 .location a:hover {
     color: var(--off-color);
 }
+
 .email h3 {
     font-size: 1.1rem;
     color: var(--dark-color);
 }
+
 .email a {
     font-size: 1.3rem;
     color: var(--dark-color);
@@ -250,9 +295,13 @@
     transition: 0.3s;
     font-weight: 400;
 }
+
 .email a:hover {
     color: var(--off-color);
 }
+
+/* ======================= footer ====================== */
+
 .footer {
     background: rgb(43, 43, 43);
     display: flex;
@@ -261,22 +310,289 @@
     height: 150px;
     gap: 600px;
 }
+
 .footer h3 {
     color: white;
     font-size: 1.1rem;
 }
+
 .footer .btn {
     display: flex;
     gap: 20px;
 }
+
 .footer .btn .fa-brands {
     color: white;
     font-size: 30px;
     transition: .3s;
 }
+
 .footer .btn .fa-linkedin:hover {
     color: #0072b1;
 }
+
 .footer .btn .fa-github:hover {
     color: #171515;
+}
+
+/* ====================== Tablet media query ====================== */
+
+@media screen and (max-width: 900px) {
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        padding: 25px 0px;
+        position: fixed;
+        width: 100%;
+        box-shadow: 4px 4px 8px rgba(196, 196, 196, 0.2);
+        z-index: 100;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 200px;
+        margin: 0 10rem;
+    }
+
+    .section1 {
+        padding: 50px 50px;
+        background: var(--gray-background);
+        height: 100vh;
+        display: flex;
+        gap: 60px;
+    }
+
+    .section1 img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 4px solid rgb(165, 165, 165);
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        padding: 150px 150px;
+        gap: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 80px;
+    }
+
+    .contact {
+        line-height: 40px;
+    }
+
+    .contact h3 {
+        color: var(--off-color);
+        font-size: 1rem;
+    }
+
+    .contact h2 {
+        color: var(--dark-color);
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    .contact-btn {
+        margin-top: 20px;
+        display: flex;
+        gap: 50px;
+    }
+
+    .contact-btn .btn-align {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact-btn .btn-align .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+    }
+
+    .contact-btn .btn-align .icons i {
+        font-size: 20px;
+        color: var(--off-color);
+    }
+
+    .location h3 {
+        font-size: 0.9rem;
+        color: var(--dark-color);
+    }
+
+    .location a {
+        font-size: 1rem;
+        color: var(--dark-color);
+        text-decoration: none;
+        transition: 0.3s;
+        font-weight: 400;
+    }
+
+    .location a:hover {
+        color: var(--off-color);
+    }
+
+    .email h3 {
+        font-size: 0.9rem;
+    }
+
+    .email a {
+        font-size: 1rem;
+    }
+
+    .footer {
+        background: rgb(43, 43, 43);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        gap: 300px;
+    }
+
+    .footer h3 {
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .footer .btn .fa-brands {
+        color: white;
+        font-size: 20px;
+        transition: .3s;
+    }
+}
+
+/* ===================== Phone media query =========================== */
+
+@media screen and (max-width: 650px) {
+    .navbar {
+        gap: 250px;
+    }
+    .right-navbar ul {
+        display: none;
+    }
+    .right-navbar i {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--dark-color);
+        display: inline;
+    }
+    .write-up {
+        margin: 0px 0px;
+        margin-top: 50px;
+    }
+    .image {
+        margin-top: 10px;
+    }
+    .section1 {
+        padding: 50px 50px;
+        background: var(--gray-background);
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    } 
+    .tech-stack {
+        gap: 30px;
+    }  
+    .tech-stack ul {
+        gap: 40px;
+        font-size: 20px;
+    }    
+    .tech-stack ul li {
+        width: 40px;
+        height: 40px;
+    }
+    .section2 {
+        flex-direction: column;
+        padding: 80px 80px;
+    }
+    .section2 img {
+        width: 360px;
+        height: 260px;
+        border-radius: 5%;
+    }
+    
+    .section2 .about-me h3 {
+        color: var(--off-color);
+        margin-bottom: 15px;
+    }
+    
+    .section2 .about-me h2 {
+        color: var(--dark-color);
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .section2 .about-me p {
+        color: var(--dark-color);
+        font-weight: 300;
+        line-height: 23px;
+    }
+    
+    .project-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--gray-background);
+        height: 200px;
+    }   
+    .project-container h1 {
+        color: var(--dark-color);
+        font-size: 1.2rem;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 80px;
+    }
+    .contact {
+        line-height: 40px;
+    }
+    .contact h3 {
+        color: var(--off-color);
+        font-size: 1rem;
+    }
+    .contact-btn {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        background: rgb(43, 43, 43);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        gap: 70px;
+    }
+
+    .footer h3 {
+        color: white;
+        font-size: 0.6rem;
+    }
+
+    .footer .btn .fa-brands {
+        color: white;
+        font-size: 0.8rem;
+        transition: .3s;
+    }
+   
+
 }
