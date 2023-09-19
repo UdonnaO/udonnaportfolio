@@ -483,13 +483,26 @@
         gap: 250px;
     }
     .right-navbar ul {
-        display: none;
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: rgba(48, 48, 48, 0.911);
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .right-navbar ul li a {
+        color: white;
+    }
+    .right-navbar ul.active {
+        left: 0;
     }
     .right-navbar i {
         font-size: 1.3rem;
         font-weight: 600;
         color: var(--dark-color);
-        display: inline;
+        display: block;
     }
     .write-up {
         margin: 0px 0px;
@@ -573,7 +586,7 @@
         flex-direction: column;
         gap: 20px;
     }
-     .email a {
+    .email a {
         font-size: 0.7rem;
     }
 
